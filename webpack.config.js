@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const webpack = require("webpack");
 const path = require("path");
 
@@ -21,5 +22,15 @@ module.exports = {
     new HtmlWebpackPlugin({ template: "index.html" }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new BrowserSyncPlugin(
+      {
+        host: 'localhost',
+        port: 3000,
+        proxy: 'http://localhost:9000/'
+      },
+      {
+        reload: false
+      }
+    )
   ],
 };
