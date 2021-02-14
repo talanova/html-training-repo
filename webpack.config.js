@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const path = require("path");
@@ -25,15 +25,15 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new BrowserSyncPlugin(
       {
-        host: 'localhost',
+        host: "localhost",
         port: 3000,
-        proxy: 'http://localhost:9000/'
+        proxy: "http://localhost:9000/",
       },
       {
-        reload: false
+        reload: false,
       }
     ),
-	new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
