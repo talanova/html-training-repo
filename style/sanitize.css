@@ -135,6 +135,7 @@ nav li::before {
  */
 
 pre {
+  /* stylelint-disable-next-line */
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
   overflow: auto; /* 3 */
@@ -178,6 +179,7 @@ strong {
 code,
 kbd,
 samp {
+  /* stylelint-disable-next-line */
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
