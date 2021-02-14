@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "lint": "prettier --check . && eslint . && stylelint \"**/*.css\"",
-    "lint:fix": "prettier --write . && eslint . --fix && stylelint \"**/*.css\" --fix",  
+    "lint:fix": "prettier --write . && eslint . --fix && stylelint \"**/*.css\" --fix",
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
@@ -28,6 +28,7 @@
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.3.0",
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.15.0",
@@ -39,6 +40,7 @@
     "jest-localstorage-mock": "^2.4.5",
     "lint-staged": "^10.5.3",
     "prettier": "2.2.1",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.10.0",
     "stylelint-config-standard": "^20.0.0",
     "webpack": "^5.10.0",
